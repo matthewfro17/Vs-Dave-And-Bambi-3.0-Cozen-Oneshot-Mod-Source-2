@@ -907,10 +907,12 @@ class PlayState extends MusicBeatState
 		switch (stageCheck)
 		{
 			case 'glitchy-void':
-				if (isShaggy) {
-					boyfriend.x += 150;
-					boyfriend.y += 150;
-				}
+				boyfriend.x += 770;
+				boyfriend.y += 900;
+				gf.x += 400;
+				gf.y += 900;
+				dad.x += 100;
+				dad.y += 100;
 		}
 
 		var doof:DialogueBox = new DialogueBox(false, dialogue, isStoryMode || localFunny == CharacterFunnyEffect.Recurser);
