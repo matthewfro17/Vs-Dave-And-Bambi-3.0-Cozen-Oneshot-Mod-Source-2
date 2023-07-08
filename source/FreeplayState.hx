@@ -96,7 +96,9 @@ class FreeplayState extends MusicBeatState
 		'eletric-cockadoodledoo',
 		'electric-cockaldoodledoo',
 		'super-saiyan',
-		'foolhardy'
+		'foolhardy',
+		'unfairness',
+		'cozen'
 	];
 
 	public static var noExtraKeys:Array<String> = 
