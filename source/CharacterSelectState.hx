@@ -2,7 +2,9 @@ package;
 
 import flixel.addons.transition.Transition;
 import flixel.addons.transition.FlxTransitionableState;
+#if sys
 import sys.io.File;
+#end
 import lime.app.Application;
 import haxe.Exception;
 import Controls.Control;
