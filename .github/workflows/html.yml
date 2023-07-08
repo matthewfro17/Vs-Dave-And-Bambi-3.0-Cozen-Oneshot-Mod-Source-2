@@ -54,7 +54,6 @@ jobs:
           haxelib git polymod https://github.com/larsiusprime/polymod.git
           haxelib install hxcpp-debug-server
           haxelib list
-        shell: cmd
       - name: Compile
         run: haxelib run lime build html5 -debug
       - name: Publish Artifact
@@ -101,7 +100,6 @@ jobs:
           haxelib git polymod https://github.com/larsiusprime/polymod.git
           haxelib install hxcpp-debug-server
           haxelib list
-        shell: cmd
       - name: Compile
         run: haxelib run lime build html5 -release
       - name: Publish Artifact
