@@ -1,7 +1,9 @@
 import flixel.math.FlxMath;
 import flixel.math.FlxMath;
 import flixel.group.FlxGroup;
+#if sys
 import sys.io.File;
+#end
 import lime.app.Application;
 import flixel.tweens.FlxTween;
 import flixel.math.FlxRandom;
@@ -118,10 +120,7 @@ class TerminalState extends MusicBeatState
         {
             if (arguments.length == 0)
             {
-                UpdatePreviousText(false); //resets the text
-                UpdateText("\n" + (!FlxG.save.data.selfAwareness ? CoolSystemStuff.getUsername() : 'User354378')
-                 + LanguageManager.getTerminalString("term_admlist_ins"));
-                return;
+
             }
             else if (arguments.length != 2)
             {
@@ -551,12 +550,6 @@ class TerminalState extends MusicBeatState
 					FlxG.save.data.exploitationFound = true;
                     FlxG.save.data.importumaniaFound = true;
 					FlxG.save.flush();
-
-					var programPath:String = Sys.programPath();
-					var textPath = programPath.substr(0, programPath.length - CoolSystemStuff.executableFileName().length) + "help me.txt";
-
-					File.saveContent(textPath, "you don't know what you're getting yourself into\n don't open the game for your own risk");
-					System.exit(0);
 				});
 			});
         });

@@ -7,7 +7,9 @@ import flixel.addons.effects.chainable.FlxShakeEffect;
 import flixel.addons.effects.chainable.FlxWaveEffect;
 import flixel.addons.effects.chainable.FlxGlitchEffect;
 import flixel.addons.effects.chainable.FlxEffectSprite;
+#if sys
 import sys.FileSystem;
+#end
 import flixel.util.FlxSave;
 import flixel.math.FlxRandom;
 import flixel.math.FlxPoint;

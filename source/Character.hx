@@ -1,6 +1,8 @@
 package;
 
+#if sys
 import sys.FileSystem;
+#end
 import flixel.math.FlxPoint;
 import flixel.util.FlxColor;
 import flixel.addons.effects.chainable.FlxEffectSprite;
