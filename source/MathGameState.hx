@@ -221,7 +221,6 @@ class MathGameState extends MusicBeatState
                case 'won':
                   PlayState.SONG = Song.loadFromJson(Highscore.formatSong('roofs', PlayState.storyDifficulty));
                   PlayState.storyWeek = 7;
-                  if (PlayState.shaggyVoice) PlayState.formoverride = "redshaggy";
 
                   FlxG.save.data.roofsUnlocked = true;
                   FlxG.save.flush();
