@@ -336,7 +336,7 @@ class Note extends FlxSprite
 				str = 'rigged';
 			}
 		}
-		if (str == 'cheating' || str == 'rigged' && PlayState.modchartoption) {
+		if (str == 'cheating' || str == 'rigged') {
 			if (mania == 0) {
 				switch (originalType)
 				{
@@ -402,7 +402,6 @@ class Note extends FlxSprite
 			SearchForStrum(musthit);
 		}
 		if (!isSustainNote) {
-			if (!PlayState.modchartoption) {
 				if (PlayState.SONG.song.toLowerCase() == 'cheating' || PlayState.SONG.song.toLowerCase() == 'rigged')
 					LocalScrollSpeed = 0.75; // target practice old
 				if (PlayState.SONG.song.toLowerCase() == 'kabunga')
@@ -410,7 +409,6 @@ class Note extends FlxSprite
 			}
 			if (PlayState.SONG.song.toLowerCase() == 'unfairness')
 			{
-				if (PlayState.modchartoption) {
 					var rng:FlxRandom = new FlxRandom();
 					if (rng.int(0, 120) == 1)
 					{
@@ -426,7 +424,6 @@ class Note extends FlxSprite
 			}
 			if (PlayState.SONG.song.toLowerCase() == 'exploitation')
 			{
-				if (PlayState.modchartoption) {
 					var rng:FlxRandom = new FlxRandom();
 					if (rng.int(0, 484) == 1)
 					{
